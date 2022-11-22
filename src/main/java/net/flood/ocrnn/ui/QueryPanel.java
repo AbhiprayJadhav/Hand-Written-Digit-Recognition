@@ -4,7 +4,8 @@ import net.flood.ocrnn.*;
 import net.flood.ocrnn.util.ImageUtils;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.*; 
+import java.awt.event.*;  
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +55,14 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
 
     private void initListeners() {
         clearCanvasButton.addActionListener(e -> charCanvas.clear());
-        trainButton.addActionListener(e->null);//e -> frame.showTrainingContent());
+        trainButton.addActionListener(
+            new ActionListener(){
+                @Override
+                public static actionPerformed(ActionEvent ae){
+                    
+                }
+            }
+        );//e -> frame.showTrainingContent());
         charCanvas.setDrawListener(this);
     }
 
