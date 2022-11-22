@@ -58,7 +58,7 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
         trainButton.addActionListener(
             new ActionListener(){
                 @Override
-                public static actionPerformed(ActionEvent ae){
+                public void actionPerformed(ActionEvent ae){
                     
                 }
             }
