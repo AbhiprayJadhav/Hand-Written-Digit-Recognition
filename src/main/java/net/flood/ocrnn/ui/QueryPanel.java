@@ -54,7 +54,7 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
 
     private void initListeners() {
         clearCanvasButton.addActionListener(e -> charCanvas.clear());
-        trainButton.addActionListener(null);//e -> frame.showTrainingContent());
+        trainButton.addActionListener(e->null);//e -> frame.showTrainingContent());
         charCanvas.setDrawListener(this);
     }
 
